@@ -13,6 +13,8 @@ Y'all need to watch tenshin takeru. Japanese people love fighting. The fans were
 
 ![alt text](<../_imgs/Screenshot 2026-01-19 000604.png>)
 
+<video controls src="../videos/Screen Recording 2026-01-19 002238.mp4" title="Title"></video>
+
 
 
 
