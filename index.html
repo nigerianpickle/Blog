@@ -1,0 +1,25 @@
+---
+layout: default
+---
+<section class="intro">
+  <h1 class="wordmark">{{ site.title }}</h1>
+  <p class="tagline">{{ site.tagline }}</p>
+</section>
+
+{% if site.posts.size == 0 %}
+<p class="empty">Nothing published yet. Send <code>/new</code> to the bot to write the first one.</p>
+{% else %}
+<ul class="feed">
+  {% for post in site.posts %}
+  <li class="entry">
+    <a href="{{ post.url | relative_url }}">
+      <span class="entry-wash" aria-hidden="true"
+            {% if post.backdrop %}style="background-image:url('{{ post.backdrop | relative_url }}')"{% endif %}></span>
+      <time class="entry-date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y.%m.%d" }}</time>
+      <h2 class="entry-title">{{ post.title }}</h2>
+      <p class="entry-excerpt">{{ post.excerpt | strip_html | strip_newlines | truncate: 140 }}</p>
+    </a>
+  </li>
+  {% endfor %}
+</ul>
+{% endif %}

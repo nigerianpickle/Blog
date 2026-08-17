@@ -1,0 +1,42 @@
+---
+layout: default
+---
+<article class="post">
+
+  <div class="hero{% unless page.backdrop %} hero-plain{% endunless %}">
+    <div class="hero-media" aria-hidden="true"
+         {% if page.backdrop %}style="background-image:url('{{ page.backdrop | relative_url }}')"{% endif %}></div>
+    <div class="hero-copy">
+      <p class="eyebrow">
+        <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>
+        <span class="sep" aria-hidden="true">/</span>
+        {% assign words = content | number_of_words %}
+        {{ words | divided_by: 220 | plus: 1 }} min read
+      </p>
+      <h1 class="hero-title">{{ page.title }}</h1>
+    </div>
+  </div>
+
+  <div class="prose">
+    {{ content }}
+  </div>
+
+  {% if page.previous or page.next %}
+  <nav class="post-nav" aria-label="More posts">
+    {% if page.next %}
+    <a class="post-nav-item" href="{{ page.next.url | relative_url }}">
+      <span class="eyebrow">Newer</span>
+      <span class="post-nav-title">{{ page.next.title }}</span>
+    </a>
+    {% else %}<span></span>{% endif %}
+
+    {% if page.previous %}
+    <a class="post-nav-item align-end" href="{{ page.previous.url | relative_url }}">
+      <span class="eyebrow">Older</span>
+      <span class="post-nav-title">{{ page.previous.title }}</span>
+    </a>
+    {% endif %}
+  </nav>
+  {% endif %}
+
+</article>

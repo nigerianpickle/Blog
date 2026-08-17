@@ -1,3 +1,56 @@
-title: Daniel’s Engineering Notes
-description: Thinking through software, data, and systems.
-theme: minima
+# ─────────────────────────────────────────────────────────
+#  Edit this file by hand. Everything here shows up on the
+#  site. The bot never touches it.
+# ─────────────────────────────────────────────────────────
+
+title: Signal Fire
+tagline: Notes, sent from a phone.
+description: A personal blog.
+author: Your Name
+
+# If your repo is called <username>.github.io:
+#   url: "https://<username>.github.io"   baseurl: ""
+# If it's called anything else (e.g. "blog"):
+#   url: "https://<username>.github.io"   baseurl: "/blog"
+url: "https://username.github.io"
+baseurl: ""
+
+timezone: America/Winnipeg
+
+# ── Shown in the "Elsewhere" block at the bottom of every page ──
+links:
+  - name: GitHub
+    url: https://github.com/username
+  - name: X
+    url: https://x.com/username
+  - name: Bluesky
+    url: https://bsky.app/profile/username
+  - name: RSS
+    url: /feed.xml
+
+# ── Shown in the "Get in touch" block ──
+contact:
+  email: you@example.com
+  note: Open to interesting conversations. I read everything.
+
+# ── Machinery below; you can leave it alone ──
+permalink: /:year/:month/:day/:title/
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter: rouge
+
+plugins:
+  - jekyll-feed
+
+feed:
+  path: feed.xml
+
+exclude:
+  - bot/
+  - README.md
+  - SETUP.md
+  - node_modules/
+  - package.json
+  - package-lock.json

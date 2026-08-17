@@ -1,0 +1,8 @@
+_site/
+.jekyll-cache/
+.jekyll-metadata
+.sass-cache/
+node_modules/
+.wrangler/
+.dev.vars
+.DS_Store
