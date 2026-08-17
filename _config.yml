@@ -3,34 +3,35 @@
 #  site. The bot never touches it.
 # ─────────────────────────────────────────────────────────
 
-title: Signal Fire
-tagline: Notes, sent from a phone.
+title: Daniel Nwogo's Blog
+tagline: Daniel's thoughs, sent from an Iphone.
 description: A personal blog.
-author: Your Name
+author: Daniel Nwogo
 
 # If your repo is called <username>.github.io:
 #   url: "https://<username>.github.io"   baseurl: ""
 # If it's called anything else (e.g. "blog"):
 #   url: "https://<username>.github.io"   baseurl: "/blog"
-url: "https://username.github.io"
-baseurl: ""
+url: "https://nigerianpickle.github.io"
+baseurl: "https://nigerianpickle.github.io/blog"
 
 timezone: America/Winnipeg
 
 # ── Shown in the "Elsewhere" block at the bottom of every page ──
 links:
   - name: GitHub
-    url: https://github.com/username
+    url: https://nigerianpickle.github.io
   - name: X
-    url: https://x.com/username
-  - name: Bluesky
-    url: https://bsky.app/profile/username
+    url: https://x.com
+  - name: LinkedIn
+    url: https://linkedin.com/in/username
+
   - name: RSS
     url: /feed.xml
 
 # ── Shown in the "Get in touch" block ──
 contact:
-  email: you@example.com
+  email: nwogodaniel123@gmail.com
   note: Open to interesting conversations. I read everything.
 
 # ── Machinery below; you can leave it alone ──
