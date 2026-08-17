@@ -3,8 +3,8 @@
 #  site. The bot never touches it.
 # ─────────────────────────────────────────────────────────
 
-title: Daniel Nwogo's Blog
-tagline: Daniel's thoughs, sent from an Iphone.
+title: Nwogo's Blog
+tagline: My thoughts, sent from an Iphone.
 description: A personal blog.
 author: Daniel Nwogo
 
@@ -24,7 +24,7 @@ links:
   - name: X
     url: https://x.com
   - name: LinkedIn
-    url: https://linkedin.com/in/username
+    url: https://linkedin.com/in/danielnwogo
 
   - name: RSS
     url: /feed.xml
