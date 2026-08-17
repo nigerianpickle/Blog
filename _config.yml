@@ -13,7 +13,7 @@ author: Daniel Nwogo
 # If it's called anything else (e.g. "blog"):
 #   url: "https://<username>.github.io"   baseurl: "/blog"
 url: "https://nigerianpickle.github.io"
-baseurl: "https://nigerianpickle.github.io/Blog"
+baseurl: "/Blog"
 
 timezone: America/Winnipeg
 
