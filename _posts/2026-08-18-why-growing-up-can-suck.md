@@ -10,6 +10,6 @@ I’m only 23 and I feel like time is moving way faster than I can keep up with.
 
 This post isn’t really a doom one or doesn’t really aim to do much, but I want you reading to understand that there is no time. That book you want to write, that project you want to finish, is going nowhere. You are going to do it, and it will suck.
 
-![](../assets/img/2026-08-18-why-growing-up-can-suck-backdrop.jpg)
+![](/assets/img/2026-08-18-why-growing-up-can-suck-backdrop.jpg)
 
 
