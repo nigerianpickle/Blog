@@ -6,17 +6,17 @@ compatibility_date = "2026-06-01"
 # Paste the id it prints below.
 [[kv_namespaces]]
 binding = "BLOG_BOT"
-id = "PASTE_KV_NAMESPACE_ID_HERE"
+id = "b1d209d8fc1046a190d23bb1097ac94c"
 
 [vars]
-GITHUB_REPO = "username/your-blog"
+GITHUB_REPO = "nigerianpickle/Blog"
 GITHUB_BRANCH = "main"
-SITE_URL = "https://username.github.io"
+SITE_URL = "https://nigerianpickle.github.io/Blog"
 SITE_TZ = "America/Winnipeg"
 
 # Your numeric Telegram ID. Message the bot once before setting this and
 # it will tell you what yours is. Comma-separated if you want more than one.
-ALLOWED_USER_IDS = ""
+ALLOWED_USER_IDS = "1966002723"
 
 # Secrets are NOT set here. Run these three, one at a time:
 #   npx wrangler secret put TELEGRAM_BOT_TOKEN
