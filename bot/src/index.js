@@ -305,12 +305,23 @@ async function publish(env, chatId, draft) {
     const imgPath = `/assets/img/${stem}-${i}.${ext}`;
     await putFile(env, imgPath.slice(1), toBase64(bytes), `Image ${i} for ${draft.title}`);
     const alt = block.caption ? escapeMd(block.caption) : "";
-    parts.push(block.caption ? `![${alt}](${imgPath})\n\n*${alt}*` : `![](${imgPath})`);
+    // Wrapped in relative_url so it resolves under baseurl, same as the
+    // backdrop image does in _layouts/post.html. A bare "/assets/..."
+    // path here would 404 under a subpath site like /Blog/.
+    const src = `{{ "${imgPath}" | relative_url }}`;
+    parts.push(block.caption ? `![${alt}](${src})\n\n*${alt}*` : `![](${src})`);
   }
 
   const firstText = draft.blocks.find((b) => b.type === "text")?.text || "";
   const excerpt = firstText.replace(/[#*_`>\[\]]/g, "").replace(/\s+/g, " ").trim().slice(0, 180);
 
+  // The blank line after the closing "---" is appended AFTER the filter,
+  // not included as an array item. filter(Boolean) drops falsy entries
+  // (used to omit backdrop/excerpt when absent) and an empty string is
+  // falsy — so a "" placed in the array to become the blank separator
+  // line was being silently deleted. Without that blank line, Jekyll
+  // doesn't recognize the front matter block at all and publishes the
+  // raw YAML as visible body text.
   const frontMatter = [
     "---",
     "layout: post",
@@ -319,8 +330,7 @@ async function publish(env, chatId, draft) {
     backdropPath ? `backdrop: ${backdropPath}` : null,
     excerpt ? `excerpt: ${yaml(excerpt)}` : null,
     "---",
-    "",
-  ].filter(Boolean).join("\n");
+  ].filter(Boolean).join("\n") + "\n\n";
 
   await edit("Committing the post…");
   await putFile(env, path, toBase64(new TextEncoder().encode(frontMatter + parts.join("\n\n") + "\n")),
