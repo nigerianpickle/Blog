@@ -5,7 +5,8 @@ date: 2026-08-18 09:53:44
 backdrop: /assets/img/2026-08-18-why-growing-up-can-suck-backdrop.jpg
 excerpt: "As I’ve grown older,.."
 
----As I’ve grown older, I’ve realized that along with losing your physical rigor; there are additional taxes that comes with aging that no one tells you
+---
+As I’ve grown older, I’ve realized that along with losing your physical rigor; there are additional taxes that comes with aging that no one tells you
 
 I’m only 23 and I feel like time is moving way faster than I can keep up with. Both socially, career-wise and mentally. As I grow I older and my responsibilities start to increase, I find myself realizing how little time we have on this planet. People talk about how your 20’s fly, but rarely talk about how 40 years can fly in an instant.
 
