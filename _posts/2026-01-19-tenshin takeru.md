@@ -1,9 +1,6 @@
 ---
-title: ""
-date: 2026-01-19
----
 layout: post
-title: "Tenshin takeru"
+title: "Tenshin vs Takeru"
 date: 2026-01-19 23:00:00
 excerpt: "Japanese fans are crazy dude!"
 ---
