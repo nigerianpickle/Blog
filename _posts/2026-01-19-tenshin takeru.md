@@ -1,8 +1,12 @@
 ---
-title: "Tenshin takeru"
+title: ""
 date: 2026-01-19
 ---
-
+layout: post
+title: "Tenshin takeru"
+date: 2026-01-19 23:00:00
+excerpt: "Japanese fans are crazy dude!"
+---
 
 Y'all need to watch tenshin takeru. Japanese people love fighting. The fans were going CRAZY!
 
@@ -11,9 +15,10 @@ Y'all need to watch tenshin takeru. Japanese people love fighting. The fans were
 
 
 
-![alt text](<../_imgs/Screenshot 2026-01-19 000604.png>)
+![](/assets/img/Screenshot%202026-01-19%20000604.png)
 
-<video controls src="../videos/Screen Recording 2026-01-19 002238.mp4" title="Title"></video>
+
+
 
 
 
